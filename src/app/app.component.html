@@ -1,0 +1,15 @@
+<div class="container">
+  <button (click)="allPressed()" class="btn btn-primary">All</button>
+  <button (click)="globalPressed()" class="btn btn-primary">Global / Spain</button>
+
+  <div *ngIf="isCountries; else elseBlock">
+    <app-informacion [countries] = 'countriesInfo'></app-informacion>
+  </div>
+  <ng-template #elseBlock>
+    <app-global 
+      [spain] = 'spainInfo' 
+      [global] = 'generalInfo'
+    ></app-global>
+  </ng-template>
+
+</div>

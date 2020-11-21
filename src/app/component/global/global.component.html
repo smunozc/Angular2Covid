@@ -1,0 +1,25 @@
+<div class="card-columns">
+
+    <div class="card">
+        <h5 class="card-header">Global</h5>
+        <div class="card-body">
+            <h5>Información</h5>
+            <p class="card-text">Confirmados: {{ global.NewConfirmed }} / {{ global.TotalConfirmed }}</p>
+            <p class="card-text">Muertos: {{ global.NewDeaths }} / {{ global.TotalDeaths }}</p>
+            <p class="card-text">Recuperados: {{ global.NewRecovered }} / {{ global.TotalRecovered }}</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h5 class="card-header">{{ spain.Country }}</h5>
+        <div class="card-body">
+            <span class="badge badge-secondary">{{ spain.CountryCode }} - {{ spain.Slug }}</span>
+
+            <h5>Información</h5>
+            <p class="card-text">Confirmados: {{ spain.NewConfirmed }} / {{ spain.TotalConfirmed }}</p>
+            <p class="card-text">Muertos: {{ spain.NewDeaths }} / {{ spain.TotalDeaths }}</p>
+            <p class="card-text">Recuperados: {{ spain.NewRecovered }} / {{ spain.TotalRecovered }}</p>
+        </div>
+    </div>
+
+</div>
